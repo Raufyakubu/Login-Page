@@ -9,17 +9,22 @@
 </head>
 <body>
     <div class="LR">
+        <div class="btn-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn">Login</button>
+            <button type="button" class="toggle-btn">Register</button>
+        </div>
         <div class="social-media">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-google-plus"></i>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
         </div>
         <div id="login">
             <form action="">
                 <input type="text" placeholder="User name" required>
                 <input type="password" placeholder="Enter password" required>
                 <label for="rem"><input type="checkbox" name="" id="rem">Remember Password</label>
-                <input type="button" name="Login" value="Log In" class="button">
+                <input type="submit" name="Login" value="Log In" class="submit-btn">
             </form>
         </div>
         <div id="register">
@@ -27,7 +32,8 @@
                 <input type="text" placeholder="User name" required>
                 <input type="emial" placeholder="Enter e-mial">
                 <input type="password" placeholder="Enter password" required>
-                <input type="button" name="Login" value="Sign Up" class="button">
+                <label for="rem"><input type="checkbox" name="" id="rem">i agree to all the terms & conditions</label>
+                <input type="button" name="Login" value="Sign Up" class="submit-btn">
             </form>
         </div>
     </div>
