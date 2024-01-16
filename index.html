@@ -5,37 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b7bb3f1d6e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stlyes.css">
+    <script src="javascrips"></script>
     <title>Login Page</title>
 </head>
 <body>
-    <div class="LR">
-        <div class="btn-box">
-            <div id="btn"></div>
-            <button type="button" class="toggle-btn">Login</button>
-            <button type="button" class="toggle-btn">Register</button>
-        </div>
-        <div class="social-media">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
-        </div>
-        <div id="login">
-            <form action="">
-                <input type="text" placeholder="User name" required>
-                <input type="password" placeholder="Enter password" required>
-                <label for="rem"><input type="checkbox" name="" id="rem">Remember Password</label>
-                <input type="submit" name="Login" value="Log In" class="submit-btn">
-            </form>
-        </div>
-        <div id="register">
-            <form action="">
-                <input type="text" placeholder="User name" required>
-                <input type="emial" placeholder="Enter e-mial">
-                <input type="password" placeholder="Enter password" required>
-                <label for="rem"><input type="checkbox" name="" id="rem">i agree to all the terms & conditions</label>
-                <input type="button" name="Login" value="Sign Up" class="submit-btn">
-            </form>
-        </div>
+    <div class="main-container">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            </div>
+            
+                <form id="login">
+                    <input type="text" placeholder="User name" required>
+                    <input type="password" placeholder="Enter password" required>
+                    <label for="rem"><input type="checkbox" class="check"><span>Remember Password</span>
+                    <input type="submit" name="Login" value="Log In" class="submit-btn">
+                </form>
+                <form id="register">
+                    <input type="text" placeholder="User name" required>
+                    <input type="emial" placeholder="Enter e-mial">
+                    <input type="password" placeholder="Enter password" required>
+                    <input type="checkbox" class="check"><span>i agree to all the terms & conditions</span>
+                    <input type="button" name="register" value="Register" class="submit-btn">
+                </form>
+            
     </div>
+    <script>
+        var signin = document.getElementById("login");
+var signup = document.getElementById("register");
+var button = document.getElementById("btn")
+
+function register(){
+    signin.style.left = "-400px";
+    signup.style.left = "0px";
+    button.style.left = "110px";
+}
+function login(){
+    signin.style.left = "0px";
+    signup.style.left = "400px";
+    button.style.left = "0px";
+}
+    </script>
 </body>
 </html>
