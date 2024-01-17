@@ -16,6 +16,7 @@ body{
     position: relative;
     border-radius: 30px;
     box-shadow: 0 0 20px hsla(17, 100%, 57%, 0.122);
+    color: #000;
 }
 .toggle-btn{
     position: relative;
@@ -24,13 +25,13 @@ body{
     cursor: pointer;
     outline: none;
     border: 0;
-    color: #fff;
+    color: #000;
     transition: 0.5s;
 }
 #btn{
     position: absolute;
     top: 0;
-    background-color: #505050;
+    background-color: #fff;
     width: 110px;
     height: 100%;
     border-radius: 30px;
