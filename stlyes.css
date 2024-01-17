@@ -12,7 +12,7 @@ body{
 }
 .btn-box{
     width: 220px;
-    margin: 35px auto;
+    margin: 30px auto;
     position: relative;
     border-radius: 30px;
     box-shadow: 0 0 20px hsla(17, 100%, 57%, 0.122);
@@ -30,7 +30,6 @@ body{
 #btn{
     position: absolute;
     top: 0;
-    left: 0;
     background-color: #505050;
     width: 110px;
     height: 100%;
@@ -38,7 +37,6 @@ body{
     transition: 0.5s;
 }
 .main-container {
-    align-content: center;
     height: 460px;
     width: 380px;
     position: relative;
@@ -46,6 +44,7 @@ body{
     border-radius: 10px;
     margin: 0 auto;
     box-shadow: 5px 5px 20px #505050;
+    overflow: hidden;
 }
 .social-media {
     text-align: center;
@@ -61,19 +60,28 @@ body{
     margin: 10px;
     cursor: pointer;
 }
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 0;
+}
  form{
     padding: 20px;
     position: absolute;
+    top: 30px;
     transition: 0.5s;
+    margin-top: 0;
 }
 form input{
-    width: 300px;
+    width: 320px;
     font-size: 15px;
     outline: none;
     border: 0;
     border-bottom: 2px solid #505050;
     padding: 10px;
-    margin: 10px;
+    margin: 7px;
     outline: none;
 }
 .check{
@@ -91,13 +99,14 @@ span{
     border-radius: 7px;
     outline: none;
     border: 0;
+    margin-left: 70px;
 }
 .section{
     display: flex;
 }
 #login{
-    left: 0px;
+    transform: translateX(0);
 }
 #register{
-    left: 450px;
+    transform: translateX(100%);
 }
